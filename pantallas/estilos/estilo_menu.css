@@ -1,0 +1,101 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: burlywood;
+    padding: 1em;
+    border: 2px solid black;
+    position: relative;
+}
+
+#avatar {
+    max-height: 2em;
+    max-width: 2em; 
+    margin-right: 10px;
+}
+
+#menu{
+    font-size:2em;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    color: black;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    padding: .5em;
+}
+
+header button img {
+    max-height: 4em;
+    max-width: 4em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: lightgoldenrodyellow;
+    
+}
+
+
+
+
+#forma a{
+    margin: 10px;
+    padding: 10px;
+    width: 100%; /* Ajustado al 100% para ocupar el ancho completo */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#forma {
+    text-align: left;
+    width: 50%;
+    margin-right: 5%; /
+}
+
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    font-style: italic;
+    background-color: lightgray;
+    padding: 2%;
+    border: solid black;
+    margin-top: 2px;
+    bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    width: 95.5%; 
+    text-align: center; 
+}
+aside{
+    width: 45%;  
+    text-align: center;  
+}
+aside img{
+    width: 80%;
+    
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1em;
+}
