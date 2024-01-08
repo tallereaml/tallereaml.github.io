@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitacora de taller EAML</title>
     <link rel="stylesheet" href="estilos/estilo_creacita.css">
 </head>
+
 <body>
-    
     <header>
-        <img id="avatar" src="" alt="Avatar"> 
+        <img id="avatar" src="" alt="Avatar">
         <a id="menu" href="./menu.html">TALLER EAML</a>
-        <button id="csesion"><img src="imagenes\cerrar_sesion.png" alt="cerrar sesion" ></button>
+        <button id="csesion"><img src="imagenes\cerrar_sesion.png" alt="cerrar sesion"></button>
     </header>
-    <a href="menu.html" >Regresa al menu principal</a>
+    <a id="back" href="menu.html">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left"
+            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M15 6l-6 6l6 6" />
+        </svg>
+    </a>
     <form id="creacita">
         <p>
             <label for="nombre">Nombre:</label>
-            <input type="text"    id="numerotel" maxlength="70" required>
-            </p>
-        <p>
-        <label for="numerotel">Numero telefonico:</label>
-        <input type="tel"    id="numerotel" minlength="10" maxlength="13" required>
+            <input type="text" id="numerotel" maxlength="70" required>
         </p>
         <p>
-        <label for="fecha">Seleccione la fecha deseada:</label>
-        <input type="date" id="fecha" required >
+            <label for="numerotel">Numero telefonico:</label>
+            <input type="tel" id="numerotel" minlength="10" maxlength="13" required>
+        </p>
+        <p>
+            <label for="fecha">Seleccione la fecha deseada:</label>
+            <input type="date" id="fecha" required>
         </p>
         <p>
             <label for="hora">Seleccione la hora deseada:</label>
-            <input type="time" id="hora" required  min="09:00" max="18:00">
-            </p>
+            <input type="time" id="hora" required min="09:00" max="18:00">
+        </p>
         <p>
             <label for="placa">Matricula de su vehiculo:</label>
             <input type="text" maxlength="10" id="placa" required>
         </p>
         <p>
-            <label for="vehiculo">Modelo de su vehiculo:</label> 
-            <input type="text"  id="vehiculo" required>
+            <label for="vehiculo">Modelo de su vehiculo:</label>
+            <input type="text" id="vehiculo" required>
         </p>
-        
+
         <p>
             Ingrese una descripcion sobre la falla del vehiculo: <br>
-            <textarea  id="falla" cols="30" rows="10" required></textarea>
+            <textarea id="falla" cols="30" rows="10" required></textarea>
         </p>
-        
+
         <p>
             <input type="submit" value="Generar cita">
             <br><br>
             <input type="reset" value="Limpiar formulario">
-            
-            
+
+
         </p>
         <output id="errores"></output>
 
-        
+
 
     </form>
-    
+
     <footer>
         <p>© 2024 MORALES LUCIO ERICK ALEJANDRO</p>
     </footer>
-    
+
 </body>
+
 </html>

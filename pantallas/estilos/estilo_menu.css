@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -17,12 +17,12 @@ header {
 
 #avatar {
     max-height: 2em;
-    max-width: 2em; 
+    max-width: 2em;
     margin-right: 10px;
 }
 
-#menu{
-    font-size:2em;
+#menu {
+    font-size: 2em;
     padding: 0%;
     margin: 0%;
     font-family: 'Times New Roman';
@@ -40,34 +40,39 @@ header button img {
     max-height: 4em;
     max-width: 4em;
 }
+header button:hover {
+    background-color: rgb(239, 199, 121);
+    border-radius: 10px;
+}
 
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     background-color: lightgoldenrodyellow;
-    
 }
 
-
-
-
-#forma a{
+#forma a {
     margin: 10px;
     padding: 10px;
-    width: 100%; /* Ajustado al 100% para ocupar el ancho completo */
+    width: 100%;
+    /* Ajustado al 100% para ocupar el ancho completo */
     background-color: #4CAF50;
     color: white;
     border: none;
-    display:inline-block;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
+    border-radius: 10px;
+}
+#forma a:hover {
+    background-color: #3e8e41;
 }
 
 #forma {
     text-align: left;
     width: 50%;
-    margin-right: 5%; /
+    margin-right: 5%;/
 }
 
 
@@ -82,17 +87,20 @@ footer {
     bottom: 0;
     margin-bottom: 0;
     position: relative;
-    width: 95.5%; 
-    text-align: center; 
+    width: 95.5%;
+    text-align: center;
 }
-aside{
-    width: 45%;  
-    text-align: center;  
+
+aside {
+    width: 45%;
+    text-align: center;
 }
-aside img{
+
+aside img {
     width: 80%;
-    
+    border-radius: 10px;
 }
+
 main {
     display: flex;
     justify-content: space-between;

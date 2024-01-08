@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -17,12 +17,12 @@ header {
 
 #avatar {
     max-height: 2em;
-    max-width: 2em; 
+    max-width: 2em;
     margin-right: 10px;
 }
 
-#menu{
-    font-size:2em;
+#menu {
+    font-size: 2em;
     padding: 0%;
     margin: 0%;
     font-family: 'Times New Roman';
@@ -46,31 +46,26 @@ body {
     padding: 0;
     height: 100vh;
     background-color: lightgoldenrodyellow;
-    
+
 }
 
-
-
-
-#creacita{
+#creacita {
     text-align: left;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
 }
-#creacita input{
-    width: 100%; 
+
+#creacita input {
+    width: 100%;
 }
-#creacita textarea{
-    width:40%;
+
+#creacita textarea {
+    width: 40%;
     position: relative;
 
 }
-a{
-    padding: 1%;
-}
-
 
 footer {
     font-family: 'Times New Roman', Times, serif;
@@ -83,7 +78,6 @@ footer {
     bottom: 0;
     margin-bottom: 0;
     position: relative;
-    width: 95.5%; 
-    text-align: center; 
+    width: 95.5%;
+    text-align: center;
 }
-
