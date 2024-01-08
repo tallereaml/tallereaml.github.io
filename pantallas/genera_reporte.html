@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora de taller EAML</title>
+    <link rel="stylesheet" href="estilos/estilo_genera.css">
+</head>
+<body>
+    
+    <header>
+        <img id="avatar" src="" alt="Avatar"> 
+        <a id="menu" href="menu.html">TALLER EAML</a>
+        <button id="csesion"><img src="imagenes\cerrar_sesion.png" alt="cerrar sesion" ></button>
+    </header>
+    <a href="menu.html" >Regresa al menu principal</a>
+    <form id="generareporte">
+        <p>
+            <label for="mecanico">Mecanico a cargo:</label>
+            <input type="text"    id="mecanico" maxlength="70" readonly value="">
+            </p>
+        <p>
+        <label for="nombre">Dueño del vehiculo:</label>
+        <input type="text"    id="nombre"  maxlength="70"  readonly value="">
+        </p>
+        <p>
+        <label for="fecha">Fecha en que se realizo el servicio/reparacion:</label>
+        <input type="date" id="fecha" required >
+        </p>
+        
+            <label for="placa">Matricula de su vehiculo:</label>
+            <input type="text" maxlength="10" id="placa" required>
+            <button id="bplaca" >Buascar matricula</button>
+        </p>
+        <p>
+            <label for="vehiculo">Modelo del vehiculo:</label> 
+            <input type="text"  id="vehiculo" readonly value="" >
+            
+        </p>
+        
+        <p>
+            Servicio o reparacion realizada al vehiculo: <br>
+            <textarea  id="falla" cols="30" rows="10" required></textarea>
+        </p>
+        
+        <p >
+            <input type="submit" value="Generar reporte de bitacora" >
+            <br><br>
+            <input type="reset" value="Limpiar formulario" >
+            
+            
+        </p>
+        <output id="errores"></output>
+
+        
+
+    </form>
+    
+    <footer>
+        <p>© 2024 MORALES LUCIO ERICK ALEJANDRO</p>
+    </footer>
+    
+</body>
+</html>

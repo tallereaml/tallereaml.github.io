@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora de taller EAML</title>
+    <link rel="stylesheet" href="estilos/estilo_creacita.css">
+</head>
+<body>
+    
+    <header>
+        <img id="avatar" src="" alt="Avatar"> 
+        <a id="menu" href="./menu.html">TALLER EAML</a>
+        <button id="csesion"><img src="imagenes\cerrar_sesion.png" alt="cerrar sesion" ></button>
+    </header>
+    <a href="menu.html" >Regresa al menu principal</a>
+    <form id="creacita">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text"    id="numerotel" maxlength="70" required>
+            </p>
+        <p>
+        <label for="numerotel">Numero telefonico:</label>
+        <input type="tel"    id="numerotel" minlength="10" maxlength="13" required>
+        </p>
+        <p>
+        <label for="fecha">Seleccione la fecha deseada:</label>
+        <input type="date" id="fecha" required >
+        </p>
+        <p>
+            <label for="hora">Seleccione la hora deseada:</label>
+            <input type="time" id="hora" required  min="09:00" max="18:00">
+            </p>
+        <p>
+            <label for="placa">Matricula de su vehiculo:</label>
+            <input type="text" maxlength="10" id="placa" required>
+        </p>
+        <p>
+            <label for="vehiculo">Modelo de su vehiculo:</label> 
+            <input type="text"  id="vehiculo" required>
+        </p>
+        
+        <p>
+            Ingrese una descripcion sobre la falla del vehiculo: <br>
+            <textarea  id="falla" cols="30" rows="10" required></textarea>
+        </p>
+        
+        <p>
+            <input type="submit" value="Generar cita">
+            <br><br>
+            <input type="reset" value="Limpiar formulario">
+            
+            
+        </p>
+        <output id="errores"></output>
+
+        
+
+    </form>
+    
+    <footer>
+        <p>© 2024 MORALES LUCIO ERICK ALEJANDRO</p>
+    </footer>
+    
+</body>
+</html>
