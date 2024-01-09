@@ -13,9 +13,11 @@ botonGitHub.addEventListener('click', async () => {
         const result = await signInWithPopup(auth, provider);
 
         // Obtener credenciales y token después de la autenticación exitosa
-        GithubCredential = GithubAuthProvider.credentialFromResult(result);
-        Githubtoken = GithubCredential.accessToken;
+        credential = GithubAuthProvider.credentialFromResult(result);
+        token = GithubCredential.accessToken;
 
+        GithubCredential=credential;
+        Githubtoken=token;
 
         // The signed-in user info.
         const user = result.user;

@@ -6,6 +6,8 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase
 
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
 
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -40,4 +42,7 @@ export const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
 
 export const auth= getAuth(app);
+
+export const db = getFirestore(app);
+
 
