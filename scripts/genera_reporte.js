@@ -15,13 +15,12 @@ generareporte.addEventListener('submit', function (event) {
     const mecanico = document.getElementById('mecanico').value,
         nombre = document.getElementById('nombre').value,
         fecha = document.getElementById('fecha').value,
-        hora = document.getElementById('hora').value,
         placa = document.getElementById('placa').value,
         vehiculo = document.getElementById('vehiculo').value,
         reparacion = document.getElementById('reparacion').value,
         autenticacionbase=auth.currentUser.uid;
 
-    setReporte(mecanico, nombre, fecha, hora, placa, vehiculo, reparacion,autenticacionbase);
+    setReporte(mecanico, nombre, fecha,  placa, vehiculo, reparacion,autenticacionbase);
 });
 
 
