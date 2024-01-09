@@ -2,13 +2,13 @@ import { collection, addDoc,getDocs } from "https://www.gstatic.com/firebasejs/1
 import { db } from "./inicioFirebase.js";
 
 
-export async function setReporte(mecanico, nombre, fecha, hora, placa, vehiculo, reparacion,autenticacionbase){
+export async function setReporte(mecanico, nombre, fecha,  placa, vehiculo, reparacion,autenticacionbase){
     try {
         const docRef = await addDoc(collection(db, "citas"), {
           mecanico,
           nombre,
           fecha,
-          hora,
+         
           placa,
           vehiculo,
           reparacion,
