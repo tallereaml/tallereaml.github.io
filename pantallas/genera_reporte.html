@@ -13,11 +13,18 @@
         <a id="menu" href="menu.html">TALLER EAML</a>
         <button id="csesion"><img src="imagenes\cerrar_sesion.png" alt="cerrar sesion" ></button>
     </header>
-    <a href="menu.html" >Regresa al menu principal</a>
+    <a id="back" href="menu.html">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left"
+            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M15 6l-6 6l6 6" />
+        </svg>
+    </a>
     <form id="generareporte">
         <p>
             <label for="mecanico">Mecanico a cargo:</label>
-            <input type="text"    id="mecanico" maxlength="70" readonly value="">
+            <input type="text"    id="mecanico" maxlength="70" >
             </p>
         <p>
         <label for="nombre">Dueño del vehiculo:</label>
@@ -30,7 +37,7 @@
         
             <label for="placa">Matricula de su vehiculo:</label>
             <input type="text" maxlength="10" id="placa" required>
-            <button id="bplaca" >Buascar matricula</button>
+            <button id="vplaca" >Buascar matricula</button>
         </p>
         <p>
             <label for="vehiculo">Modelo del vehiculo:</label> 
@@ -40,7 +47,7 @@
         
         <p>
             Servicio o reparacion realizada al vehiculo: <br>
-            <textarea  id="falla" cols="30" rows="10" required></textarea>
+            <textarea  id="reparacion" cols="30" rows="10" required></textarea>
         </p>
         
         <p >
@@ -52,13 +59,15 @@
         </p>
         <output id="errores"></output>
 
-        
+        <script src="../scripts/genera_reporte.js" type="module"></script>
 
     </form>
     
     <footer>
         <p>© 2024 MORALES LUCIO ERICK ALEJANDRO</p>
     </footer>
-    
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/scripts/csesion.js"></script> 
+
 </body>
 </html>
